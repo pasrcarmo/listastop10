@@ -68,7 +68,7 @@ def enrich_with_google_search(items):
     for item in items:
         try:
             # Search for the item name with category context
-            search_query = f"{item['searchable_name']}"
+            search_query = item['searchable_name']
             print(f"Searching for: {search_query}")
             
             # Image search
