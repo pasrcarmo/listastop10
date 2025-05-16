@@ -1,6 +1,8 @@
 fastapi
 uvicorn[standard]
 python-dotenv
-google-generativeai
+google-generativeai==0.2.0
 google-api-python-client
+google-api-core
+google-cloud-aiplatform
 gunicorn
