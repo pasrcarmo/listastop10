@@ -8,7 +8,7 @@ type ListItem = {
   name: string;
   mainUrl: string;
   imageUrl: string;
-  [key: string]: any;
+  [key: string]: string | number;
 };
 
 type ListResponse = {
