@@ -1,0 +1,172 @@
+{
+    "title": "Top 10 Notebooks Mais Vendidos em 2024",
+    "criteria": "Lista dos 10 notebooks mais vendidos globalmente no ano de 2024, refletindo a demanda do mercado, a popularidade entre os consumidores e o sucesso comercial de cada modelo.",
+    "attributes": [
+        {
+            "key": "brand",
+            "name": "Marca"
+        },
+        {
+            "key": "model",
+            "name": "Modelo"
+        },
+        {
+            "key": "operating_system",
+            "name": "Sistema Operacional"
+        },
+        {
+            "key": "screen_size",
+            "name": "Tamanho da Tela (polegadas)"
+        },
+        {
+            "key": "estimated_base_price",
+            "name": "Preço Base Estimado"
+        },
+        {
+            "key": "units_sold_estimated",
+            "name": "Unidades Vendidas (Estimado)"
+        }
+    ],
+    "items": [
+        {
+            "name": "MacBook Air M2",
+            "brand": "Apple",
+            "model": "MacBook Air M2",
+            "operating_system": "macOS",
+            "screen_size": "13.6",
+            "estimated_base_price": "A partir de R$ 9.999",
+            "units_sold_estimated": "8.500.000",
+            "metadata": {
+                "image_url": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1708367688034",
+                "product_url": "https://www.apple.com/br/macbook-air/",
+                "wikipedia_url": "https://pt.wikipedia.org/wiki/MacBook_Air"
+            }
+        },
+        {
+            "name": "Dell XPS 13",
+            "brand": "Dell",
+            "model": "XPS 13",
+            "operating_system": "Windows",
+            "screen_size": "13.4",
+            "estimated_base_price": "A partir de R$ 7.499",
+            "units_sold_estimated": "7.200.000",
+            "metadata": {
+                "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/9345/spi/platinum/touch-oled/notebook-xps-13-9345-oled-silver-campaign-hero-504x350-ng.psd?fmt=jpg",
+                "product_url": "https://www.dell.com/pt-br/shop/notebooks-dell/novo-xps-13/spd/xps-13-9315-laptop",
+                "wikipedia_url": "https://en.wikipedia.org/wiki/Dell_XPS"
+            }
+        },
+        {
+            "name": "Lenovo ThinkPad X1 Carbon Gen 11",
+            "brand": "Lenovo",
+            "model": "ThinkPad X1 Carbon Gen 11",
+            "operating_system": "Windows",
+            "screen_size": "14",
+            "estimated_base_price": "A partir de R$ 8.999",
+            "units_sold_estimated": "6.800.000",
+            "metadata": {
+                "image_url": "https://p4-ofp.static.pub/fes/cms/2023/02/10/7qjkk7h1a53t8jq5snivyzumxw040v193587.png",
+                "product_url": "https://www.lenovo.com/br/pt/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-carbon-gen-11-(14-inch-intel)/21hls00200",
+                "wikipedia_url": "https://en.wikipedia.org/wiki/ThinkPad_X1_Carbon"
+            }
+        },
+        {
+            "name": "HP Spectre x360 14",
+            "brand": "HP",
+            "model": "Spectre x360 14",
+            "operating_system": "Windows",
+            "screen_size": "13.5",
+            "estimated_base_price": "A partir de R$ 9.499",
+            "units_sold_estimated": "6.000.000",
+            "metadata": {
+                "image_url": "https://www.hp.com/gb-en/shop/Html/Merch/Images/9D0J9EA-ABU_8_1750x1285.jpg",
+                "product_url": "https://www.hp.com/br-pt/shop/computador-hp-spectre-x360-14-ef2000br-7u7q6la.html",
+                "wikipedia_url": "https://en.wikipedia.org/wiki/HP_Spectre"
+            }
+        },
+        {
+            "name": "ASUS Zenbook 14 OLED",
+            "brand": "ASUS",
+            "model": "Zenbook 14 OLED",
+            "operating_system": "Windows",
+            "screen_size": "14",
+            "estimated_base_price": "A partir de R$ 6.999",
+            "units_sold_estimated": "5.500.000",
+            "metadata": {
+                "image_url": "https://dlcdnwebimgs.asus.com/gain/838fbdac-6d10-4190-8e52-d4b9463f5d23/",
+                "product_url": "https://www.asus.com/br/laptops/for-home/zenbook/zenbook-14-oled-um3402/",
+                "wikipedia_url": "https://en.wikipedia.org/wiki/Asus_Zenbook"
+            }
+        },
+        {
+            "name": "Microsoft Surface Laptop 5",
+            "brand": "Microsoft",
+            "model": "Surface Laptop 5",
+            "operating_system": "Windows",
+            "screen_size": "13.5",
+            "estimated_base_price": "A partir de R$ 7.999",
+            "units_sold_estimated": "5.000.000",
+            "metadata": {
+                "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Render-Platinum-Surface-Laptop-5-RE50yTd?fmt=png-alpha",
+                "product_url": "https://www.microsoft.com/pt-br/surface/devices/surface-laptop-5",
+                "wikipedia_url": "https://en.wikipedia.org/wiki/Microsoft_Surface_Laptop"
+            }
+        },
+        {
+            "name": "Acer Swift 5",
+            "brand": "Acer",
+            "model": "Swift 5",
+            "operating_system": "Windows",
+            "screen_size": "14",
+            "estimated_base_price": "A partir de R$ 6.499",
+            "units_sold_estimated": "4.800.000",
+            "metadata": {
+                "image_url": "https://cdn.uc.assets.prezly.com/21568a99-ea8b-4513-95e2-f9a0228b5c1a/Swift_5_SF514-54T_SF514-54GT_01_recommended.jpg",
+                "product_url": "https://www.acer.com/us-en/laptops/swift/swift-5",
+                "wikipedia_url": "https://en.wikipedia.org/wiki/Acer_Swift"
+            }
+        },
+        {
+            "name": "LG Gram 17",
+            "brand": "LG",
+            "model": "Gram 17",
+            "operating_system": "Windows",
+            "screen_size": "17",
+            "estimated_base_price": "A partir de R$ 8.499",
+            "units_sold_estimated": "4.200.000",
+            "metadata": {
+                "image_url": "https://m.media-amazon.com/images/I/81inFqt1MiL.jpg",
+                "product_url": "https://www.lg.com/br/computadores/lg-17z90r-gag78",
+                "wikipedia_url": "https://en.wikipedia.org/wiki/LG_Gram"
+            }
+        },
+        {
+            "name": "Razer Blade 15",
+            "brand": "Razer",
+            "model": "Blade 15",
+            "operating_system": "Windows",
+            "screen_size": "15.6",
+            "estimated_base_price": "A partir de R$ 12.999",
+            "units_sold_estimated": "4.000.000",
+            "metadata": {
+                "image_url": "https://assets3.razerzone.com/3JvxLHs4_JJoLRyHpQwDUEDDkdw=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh78%2Fh14%2F9450482376734%2F230123-blade-16-1500x1000-1.jpg",
+                "product_url": "https://www.razer.com/gaming-laptops/Razer-Blade-15",
+                "wikipedia_url": "https://en.wikipedia.org/wiki/Razer_Blade"
+            }
+        },
+        {
+            "name": "Samsung Galaxy Book3 Pro",
+            "brand": "Samsung",
+            "model": "Galaxy Book3 Pro",
+            "operating_system": "Windows",
+            "screen_size": "14",
+            "estimated_base_price": "A partir de R$ 7.799",
+            "units_sold_estimated": "3.800.000",
+            "metadata": {
+                "image_url": "https://images.samsung.com/is/image/samsung/p6pim/hk_en/feature/164347015/hk-en-feature-galaxy-book3-pro-16-inch-np960-535407515",
+                "product_url": "https://www.samsung.com/br/computers/galaxy-book/galaxy-book3-pro-14inch-intel-core-i7-np940xfg-ka1br/",
+                "wikipedia_url": "https://www.samsung.com/br/galaxy-book/galaxy-book3/"
+            }
+        }
+    ]
+}
