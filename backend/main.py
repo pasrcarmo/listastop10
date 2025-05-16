@@ -44,7 +44,7 @@ chat_config = types.GenerateContentConfig(
                             c) O campo 'criteria' deve explicitar o critério de ordenação utilizado na lista.
                             d) O array 'attributes' deve conter objetos, cada um com as chaves 'key' (chave única do atributo) e 'name' (nome do atributo para exibição).
                             e) O array 'items' deve conter objetos, cada um representando um item da lista. Cada objeto terá uma chave 'name' para o nome do item, outras chaves correspondentes às 'key's definidas em 'attributes' (incluindo métricas quantitativas se aplicável), e opcionalmente um objeto aninhado 'metadata' contendo links relevantes e válidos ('image_url', 'product_url', 'wikipedia_url', 'youtube_channel_url', 'youtube_url', etc.) quando disponíveis e verificáveis pelo modelo.
-                            f) O campo 'category' deve conter o tema principal da lista de forma breve e clara (ex: cantora, filme, artista, produto, etc).
+                            f) O campo 'searchable_name' deve conter o nome do item para ser utilizado na busca (ex: no caso da cantora "pink" deveria ser "cantora pink", mas no caso de um nome mais único como "iphone 13", deveria ser somente "iphone 13").
                             g) Caso o input seja em outro idioma, a saída deve ser no idioma do input.
                             5. Gerenciamento de Dados e Metadata:
                             a) Reconhecer que o conhecimento do modelo não é em tempo real. Métricas quantitativas e a disponibilidade/validade de links podem refletir o estado do mundo até o ponto de corte do treinamento.
@@ -56,7 +56,7 @@ chat_config = types.GenerateContentConfig(
                             - Demonstrar conhecimento e expertise na criação de listas relevantes e com atributos úteis."""
 )
 
-def enrich_with_google_search(items, category):
+def enrich_with_google_search(items):
     # Initialize the Custom Search API service
     try:
         service = build("customsearch", "v1", developerKey=os.environ['GOOGLE_API_KEY'])
@@ -68,7 +68,7 @@ def enrich_with_google_search(items, category):
     for item in items:
         try:
             # Search for the item name with category context
-            search_query = f"{item['name']} {category}"
+            search_query = f"{item['searchable_name']}"
             print(f"Searching for: {search_query}")
             
             # Image search
@@ -147,8 +147,7 @@ async def chat_with_gemini(req: Request):
         
     # Enrich items with Google search results
     if "items" in response_json:
-        category = response_json.get("category", "")
-        response_json["items"] = enrich_with_google_search(response_json["items"], category)
+        response_json["items"] = enrich_with_google_search(response_json["items"])
 
     print(response_json)
 
