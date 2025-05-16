@@ -83,3 +83,5 @@ prompt: 💸 *Cidades mais baratas para viajar no Nordeste do Brasil*
 AH, o mesmo conceito que apliquei aqui poderia ter sido utilizado para a geração de Quizzes - outra parte importante do famigerado mencionado acima. 🤯
 
 P.S.: Esse README pode ou não conter traços de IA 👀
+
+P.S.2: Teste [aqui](https://listastop10-78sk.vercel.app/) mas não repare na latência, estou usando versões gratuitas de tudo e há um preco a se pagar 😬
