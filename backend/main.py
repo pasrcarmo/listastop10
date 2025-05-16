@@ -116,8 +116,6 @@ def enrich_with_google_search(items):
 
     return items
 
-chat = client.chats.create(model=model, config=chat_config)
-
 app = FastAPI(title="Listas Top 10 API")
 
 # Configuração do CORS
@@ -139,19 +137,25 @@ async def root():
 
 @app.post("/chat")
 async def chat_with_gemini(req: Request):
-    body = await req.json()
-    prompt = body.get("prompt")
+    try:
+        body = await req.json()
+        prompt = body.get("prompt")
 
-    response = chat.send_message(prompt)
-    response_json = json.loads(response.text.strip().replace("```json", "").replace("```", ""))
-        
-    # Enrich items with Google search results
-    if "items" in response_json:
-        response_json["items"] = enrich_with_google_search(response_json["items"])
+        chat = client.chats.create(model=model, config=chat_config)
 
-    print(response_json)
+        response = chat.send_message(prompt)
+        response_json = json.loads(response.text.strip().replace("```json", "").replace("```", ""))
+            
+        # Enrich items with Google search results
+        if "items" in response_json:
+            response_json["items"] = enrich_with_google_search(response_json["items"])
 
-    return {"response": json.dumps(response_json)}
+        print(response_json)
+
+        return {"response": json.dumps(response_json)}
+    except Exception as e:
+        print(f"Error in chat_with_gemini: {str(e)}")
+        return {"error": str(e)}, 500
 
 if __name__ == "__main__":
     import uvicorn
