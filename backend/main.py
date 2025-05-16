@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-from google import genai
+import google.generativeai as genai
 from google.genai import types
 import os
 from googleapiclient.discovery import build
