@@ -118,15 +118,24 @@ def enrich_with_google_search(items, category):
 
 chat = client.chats.create(model=model, config=chat_config)
 
+app = FastAPI(title="Listas Top 10 API")
 
-app = FastAPI()
-
+# Configuração do CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://listastop10-78sk.vercel.app/"],
+    allow_origins=[
+        "https://listastop10-78sk.vercel.app",
+        "http://localhost:3000",
+        "http://localhost:5173"
+    ],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/")
+async def root():
+    return {"message": "Listas Top 10 API is running!"}
 
 @app.post("/chat")
 async def chat_with_gemini(req: Request):
@@ -144,3 +153,8 @@ async def chat_with_gemini(req: Request):
     print(response_json)
 
     return {"response": json.dumps(response_json)}
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
