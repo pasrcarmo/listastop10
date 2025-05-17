@@ -78,6 +78,10 @@ prompt: 🎬 *Filmes que mais parecem velozes e furiosos mas não são velozes e
 prompt: 💸 *Cidades mais baratas para viajar no Nordeste do Brasil*
 ![image](https://github.com/user-attachments/assets/62fa4ce9-0d16-4226-a30f-9502501f642c)
 
+prompt: 🎵 *Álbuns brasileiros que floparam e depois viraram clássicos cult*
+![image](https://github.com/user-attachments/assets/5fe620df-4aa0-44a7-b47b-82f90b9e96a9)
+
+
 ## 🧱 Sobre o futuro (e o potencial)
 É claro que o projeto pode melhorar muito em acurácia, arquitetura, design e a essa altura é apenas uma brincadeira 😆 o mais interessante aqui é ter feito algo completamente dinâmico e vivo para o usuário, mas acredito que com um pouco mais de esforço esse site poderia ser gerado a partir de scripts (ou outros agentes autonomos de IA) e com uma melhor arquitetura, poderíamos cachear as páginas e com alguns agentes de IA especializados em revisão de conteúdo poderíamos facilmente ter a criação de um site com milhares de listas. Com um pouco de otimização de SEO, seria possível ter um *Buzzfeed on steroids* feito quase que inteiramente com IA.
 AH, o mesmo conceito que apliquei aqui poderia ter sido utilizado para a geração de Quizzes - outra parte importante do famigerado mencionado acima. 🤯
